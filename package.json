@@ -32,7 +32,8 @@
     "react-dom": "*"
   },
   "scripts": {
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "build": "rollup -c"
   },
   "lint-staged": {
     "*.js": [
