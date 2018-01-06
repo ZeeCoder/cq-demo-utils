@@ -1,5 +1,6 @@
 {
   "name": "@zeecoder/cq-demo-utils",
+  "author": "Viktor Hubert <rpgmorpheus@gmail.com>",
   "version": "0.0.1",
   "main": "dist/bundle.cjs.js",
   "license": "MIT",
