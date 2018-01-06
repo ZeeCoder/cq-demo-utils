@@ -1,0 +1,35 @@
+{
+  "name": "@zeecoder/cq-demo-utils",
+  "version": "0.0.1",
+  "main": "dist/bundle.cjs.js",
+  "license": "MIT",
+  "dependencies": {
+    "@zeecoder/container-query": "^2.0.0",
+    "@zeecoder/postcss-container-query": "^2.0.0",
+    "postcss": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "6",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2",
+    "rollup": "^0.53.3",
+    "rollup-plugin-babel": "^3.0.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
