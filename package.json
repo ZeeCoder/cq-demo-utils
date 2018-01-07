@@ -1,7 +1,7 @@
 {
   "name": "@zeecoder/cq-demo-utils",
   "author": "Viktor Hubert <rpgmorpheus@gmail.com>",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "dependencies": {
     "@zeecoder/container-query": "^2.0.0",
     "@zeecoder/postcss-container-query": "^2.0.0",
-    "postcss": "^5.2.18"
+    "postcss": "6.0.9"
   },
   "devDependencies": {
     "babel-core": "6",
