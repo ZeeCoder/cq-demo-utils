@@ -14,7 +14,7 @@
   "dependencies": {
     "@zeecoder/container-query": "^2.0.0",
     "@zeecoder/postcss-container-query": "^2.0.0",
-    "postcss": "^5.0.0"
+    "postcss": "^5.2.18"
   },
   "devDependencies": {
     "babel-core": "6",
