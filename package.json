@@ -33,7 +33,8 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublish": "yarn run build"
   },
   "lint-staged": {
     "*.js": [
