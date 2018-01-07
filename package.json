@@ -3,6 +3,7 @@
   "author": "Viktor Hubert <rpgmorpheus@gmail.com>",
   "version": "0.0.4",
   "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -33,7 +34,7 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "build": "rollup -c",
+    "build": "rollup -c rollup/cjs.js && rollup -c rollup/esm.js",
     "prepare": "yarn build"
   },
   "lint-staged": {

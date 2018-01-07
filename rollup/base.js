@@ -1,11 +1,7 @@
 import babel from "rollup-plugin-babel";
 
 export default {
-  input: __dirname + "/src/index.js",
-  output: {
-    file: __dirname + "/dist/bundle.cjs.js",
-    format: "cjs"
-  },
+  input: __dirname + "/../src/index.js",
   plugins: [babel()],
   external: [
     "react",
