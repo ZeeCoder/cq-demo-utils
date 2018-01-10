@@ -8,6 +8,8 @@ export default {
     "react-dom",
     "@zeecoder/container-query",
     "@zeecoder/postcss-container-query",
-    "postcss"
+    "postcss",
+    "postcss-nested",
+    "postcss-media-minmax"
   ]
 };
