@@ -12,13 +12,15 @@ import autoprefixer from "autoprefixer";
  * with the processed CSS and the container query stats.
  *
  * @param {string} css
+ * @param {{}} options container query postcss plugin options
  * @return {Promise<{
  *   css: string,
  *   stats: Object,
  * }>}
  */
-export const processCSS = css =>
+export const processCSS = (css, options) =>
   new Promise(resolve => {
+    options.getJSON = (filepath, stats) => resolve(stats);
     postcss([
       nested({ bubble: ["container"] }),
       mediaMinMax(),
@@ -32,9 +34,7 @@ export const processCSS = css =>
           "Edge >= 12"
         ]
       }),
-      containerQuery({
-        getJSON: (filepath, stats) => resolve(stats)
-      })
+      containerQuery(options)
     ])
       .process(css, { from: "src/app.css", to: "dest/app.css" })
       .then(result => appendCSS(result));
@@ -75,4 +75,21 @@ export const withContainerQueryCSS = (WrappedComponent, rawCSS, opts = {}) => {
       return <WrappedComponent {...this.props} />;
     }
   };
+};
+
+/**
+ * @param {{
+ *   [selector]: Object,
+ * }} containers
+ * @param {boolean} [adjustOnWindowResize]
+ */
+export const initialiseAllContainers = (
+  containers,
+  adjustOnWindowResize = true
+) => {
+  for (let containerSelector in containers) {
+    document.querySelectorAll(containerSelector).forEach(htmlElement => {
+      new Container(htmlElement, containers[containerSelector]);
+    });
+  }
 };
