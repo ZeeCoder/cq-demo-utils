@@ -10,6 +10,7 @@ export default {
     "@zeecoder/postcss-container-query",
     "postcss",
     "postcss-nested",
-    "postcss-media-minmax"
+    "postcss-media-minmax",
+    "autoprefixer"
   ]
 };
