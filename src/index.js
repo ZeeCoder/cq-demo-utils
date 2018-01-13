@@ -5,7 +5,7 @@ import containerQuery from "@zeecoder/postcss-container-query";
 import postcss from "postcss";
 import nested from "postcss-nested";
 import mediaMinMax from "postcss-media-minmax";
-// import autoprefixer from "autoprefixer";
+import autoprefixer from "autoprefixer";
 
 /**
  * Processes the given CSS with some select plugins, after which it resolves
@@ -22,16 +22,16 @@ export const processCSS = css =>
     postcss([
       nested({ bubble: ["container"] }),
       mediaMinMax(),
-      // autoprefixer({
-      //   browsers: [
-      //     ">1%",
-      //     "IE >= 9",
-      //     "FF >= 30",
-      //     "Chrome >= 30",
-      //     "Safari >= 10",
-      //     "Edge >= 12"
-      //   ]
-      // }),
+      autoprefixer({
+        browsers: [
+          ">1%",
+          "IE >= 9",
+          "FF >= 30",
+          "Chrome >= 30",
+          "Safari >= 10",
+          "Edge >= 12"
+        ]
+      }),
       containerQuery({
         getJSON: (filepath, stats) => resolve(stats)
       })

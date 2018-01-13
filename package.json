@@ -15,6 +15,7 @@
   "dependencies": {
     "@zeecoder/container-query": "^2.0.0",
     "@zeecoder/postcss-container-query": "^2.0.0",
+    "autoprefixer": "^7.2.5",
     "postcss": "6.0.9",
     "postcss-media-minmax": "^3.0.0",
     "postcss-nested": "^3.0.0"
