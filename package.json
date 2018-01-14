@@ -1,7 +1,7 @@
 {
   "name": "@zeecoder/cq-demo-utils",
   "author": "Viktor Hubert <rpgmorpheus@gmail.com>",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "license": "MIT",
@@ -32,6 +32,10 @@
     "rollup-plugin-babel": "^3.0.3"
   },
   "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "optionalDependencies": {
     "react": "*",
     "react-dom": "*"
   },
