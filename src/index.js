@@ -12,13 +12,13 @@ import autoprefixer from "autoprefixer";
  * with the processed CSS and the container query stats.
  *
  * @param {string} css
- * @param {{}} options container query postcss plugin options
+ * @param {{}} [options] container query postcss plugin options
  * @return {Promise<{
  *   css: string,
  *   stats: Object,
  * }>}
  */
-export const processCSS = (css, options) =>
+export const processCSS = (css, options = {}) =>
   new Promise(resolve => {
     options.getJSON = (filepath, stats) => resolve(stats);
     postcss([
