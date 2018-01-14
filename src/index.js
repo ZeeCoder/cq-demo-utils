@@ -80,16 +80,20 @@ export const withContainerQueryCSS = (WrappedComponent, rawCSS, opts = {}) => {
 /**
  * @param {{
  *   [selector]: Object,
- * }} containers
- * @param {boolean} [adjustOnWindowResize]
+ * }} stats
  */
-export const initialiseAllContainers = (
-  containers,
-  adjustOnWindowResize = true
-) => {
-  for (let containerSelector in containers) {
+export const initialiseAllContainers = stats => {
+  if (stats.selector) {
+    // Seems like a single container's stats object, so let's convert it to the
+    // multi-container format.
+    stats = {
+      [stats.selector]: stats
+    };
+  }
+
+  for (let containerSelector in stats) {
     document.querySelectorAll(containerSelector).forEach(htmlElement => {
-      new Container(htmlElement, containers[containerSelector]);
+      new Container(htmlElement, stats[containerSelector]);
     });
   }
 };
