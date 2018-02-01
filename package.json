@@ -13,10 +13,10 @@
     "url": "https://github.com/ZeeCoder/cq-demo-utils/issues"
   },
   "dependencies": {
-    "@zeecoder/container-query": "^2.0.0",
-    "@zeecoder/postcss-container-query": "^2.0.0",
+    "@zeecoder/container-query": "2.3.0-alpha.94bc4e97",
+    "@zeecoder/postcss-container-query": "2.3.0-alpha.94bc4e97",
     "autoprefixer": "^7.2.5",
-    "postcss": "6.0.9",
+    "postcss": "6.0.17",
     "postcss-media-minmax": "^3.0.0",
     "postcss-nested": "^3.0.0"
   },
@@ -26,9 +26,9 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "prettier": "^1.9.2",
-    "rollup": "^0.53.3",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "rollup": "^0.55.3",
     "rollup-plugin-babel": "^3.0.3"
   },
   "peerDependencies": {
