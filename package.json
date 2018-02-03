@@ -13,8 +13,8 @@
     "url": "https://github.com/ZeeCoder/cq-demo-utils/issues"
   },
   "dependencies": {
-    "@zeecoder/container-query": "2.3.0-alpha.94bc4e97",
-    "@zeecoder/postcss-container-query": "2.3.0-alpha.94bc4e97",
+    "@zeecoder/container-query": "2.3.0",
+    "@zeecoder/postcss-container-query": "2.3.0",
     "autoprefixer": "^7.2.5",
     "postcss": "6.0.17",
     "postcss-media-minmax": "^3.0.0",
