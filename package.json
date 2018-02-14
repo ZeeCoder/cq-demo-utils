@@ -1,7 +1,7 @@
 {
   "name": "@zeecoder/cq-demo-utils",
   "author": "Viktor Hubert <rpgmorpheus@gmail.com>",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "license": "MIT",
@@ -13,10 +13,10 @@
     "url": "https://github.com/ZeeCoder/cq-demo-utils/issues"
   },
   "dependencies": {
-    "@zeecoder/container-query": "2.3.0",
-    "@zeecoder/postcss-container-query": "2.3.0",
+    "@zeecoder/container-query": "^2.4.0",
+    "@zeecoder/postcss-container-query": "^2.4.1",
     "autoprefixer": "^7.2.5",
-    "postcss": "6.0.17",
+    "postcss": "^6.0.17",
     "postcss-media-minmax": "^3.0.0",
     "postcss-nested": "^3.0.0"
   },

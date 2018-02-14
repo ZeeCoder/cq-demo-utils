@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@zeecoder/container-query@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@zeecoder/container-query/-/container-query-2.3.0.tgz#653a346b14b20f72d1ff8f6647744181da098707"
+"@zeecoder/container-query@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@zeecoder/container-query/-/container-query-2.4.0.tgz#a42f973c7ea745180853e7d0a71392aa650c00cc"
   dependencies:
     es6-weak-map "^2.0.2"
     lodash "^4.17.4"
@@ -13,9 +13,9 @@
     raf "^3.3.2"
     resize-observer-polyfill "^1.4.2"
 
-"@zeecoder/postcss-container-query@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@zeecoder/postcss-container-query/-/postcss-container-query-2.3.0.tgz#c04235b06fd5793245b807e73c03e44b7311506a"
+"@zeecoder/postcss-container-query@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@zeecoder/postcss-container-query/-/postcss-container-query-2.4.1.tgz#573ba46b2a6b34a5bc02fc1c006801ff8cbfe92f"
   dependencies:
     lodash "^4.17.4"
     postcss "^6.0.1"
@@ -1294,7 +1294,7 @@ postcss-value-parser@^3.2.3:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
-postcss@6.0.17, postcss@^6.0.1, postcss@^6.0.14, postcss@^6.0.16:
+postcss@^6.0.1, postcss@^6.0.14, postcss@^6.0.16, postcss@^6.0.17:
   version "6.0.17"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.17.tgz#e259a051ca513f81e9afd0c21f7f82eda50c65c5"
   dependencies:
