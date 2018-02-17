@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.0.18]
+
+### Fixed
+
+* Fixed broken `withContainerQueryCSS`
+
 ## [0.0.17]
 
 ### Added

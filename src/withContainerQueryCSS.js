@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Container from "@zeecoder/container-query";
+import processCSS from "./processCSS";
 
 /**
  * A HoC that processes the given raw css as container query CSS, then appends
