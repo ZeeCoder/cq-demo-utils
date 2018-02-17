@@ -20,6 +20,16 @@
     lodash "^4.17.4"
     postcss "^6.0.1"
 
+"@zeecoder/react-container-query@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@zeecoder/react-container-query/-/react-container-query-2.4.0.tgz#d8a62a7683e4fa4e8ab123ae43d128dd1ef814d5"
+  dependencies:
+    "@zeecoder/container-query" "^2.4.0"
+    es6-weak-map "^2.0.2"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+    resize-observer-polyfill "^1.5.0"
+
 ansi-escapes@^1.0.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-1.4.0.tgz#d3a8a83b319aa67793662b13e761c7911422306e"
@@ -1403,7 +1413,7 @@ require-from-string@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.1.tgz#c545233e9d7da6616e9d59adfb39fc9f588676ff"
 
-resize-observer-polyfill@^1.4.2:
+resize-observer-polyfill@^1.4.2, resize-observer-polyfill@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.0.tgz#660ff1d9712a2382baa2cad450a4716209f9ca69"
 

@@ -6,8 +6,10 @@ export default {
   external: [
     "react",
     "react-dom",
+    "prop-types",
     "@zeecoder/container-query",
     "@zeecoder/postcss-container-query",
+    "@zeecoder/react-container-query",
     "postcss",
     "postcss-nested",
     "postcss-media-minmax",

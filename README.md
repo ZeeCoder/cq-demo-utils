@@ -12,3 +12,11 @@ processes CSS and injects it in the html afterwards.
 **The fact that only patch versions are released is intentional.**
 
 This package should in no way be considered for production, only for demoing purposes.
+
+## Api
+
+[index.js](./src/index.js)
+
+## License
+
+[MIT](./LICENSE)
