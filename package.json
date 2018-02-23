@@ -1,7 +1,7 @@
 {
   "name": "@zeecoder/cq-demo-utils",
   "author": "Viktor Hubert <rpgmorpheus@gmail.com>",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "license": "MIT",
