@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.0.21]
+
+### Added
+
+* Updated to v2.6.0-alpha.97fec537
+
+### Breaking
+
+* `<ContainerQuery>` now expects a `meta` prop, and not `stats`
+
 ## [0.0.18]
 
 ### Fixed

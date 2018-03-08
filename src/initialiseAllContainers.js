@@ -3,20 +3,20 @@ import Container from "@zeecoder/container-query";
 /**
  * @param {{
  *   [selector]: Object,
- * }} stats
+ * }} meta
  */
-const initialiseAllContainers = stats => {
-  if (stats.selector) {
+const initialiseAllContainers = meta => {
+  if (meta.selector) {
     // Seems like a single container's stats object, so let's convert it to the
     // multi-container format.
-    stats = {
-      [stats.selector]: stats
+    meta = {
+      [meta.selector]: meta
     };
   }
 
-  for (let containerSelector in stats) {
+  for (let containerSelector in meta) {
     document.querySelectorAll(containerSelector).forEach(htmlElement => {
-      new Container(htmlElement, stats[containerSelector]);
+      new Container(htmlElement, meta[containerSelector]);
     });
   }
 };

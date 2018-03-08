@@ -18,7 +18,7 @@ const withContainerQueryCSS = (WrappedComponent, rawCSS, opts = {}) => {
   return class extends Component {
     componentDidMount() {
       processing.then(
-        stats => new Container(ReactDOM.findDOMNode(this), stats, opts)
+        meta => new Container(ReactDOM.findDOMNode(this), meta, opts)
       );
     }
 

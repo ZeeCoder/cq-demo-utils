@@ -8,16 +8,16 @@ export default class ContainerQuery extends Component {
     super(props);
 
     this.state = {
-      stats: null
+      meta: null
     };
   }
 
   componentDidMount() {
-    processCSS(this.props.css).then(stats => this.setState({ stats }));
+    processCSS(this.props.css).then(meta => this.setState({ meta }));
   }
 
   render() {
-    return <BaseContainerQuery stats={this.state.stats} {...this.props} />;
+    return <BaseContainerQuery meta={this.state.meta} {...this.props} />;
   }
 }
 

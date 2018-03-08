@@ -6,18 +6,15 @@ import autoprefixer from "autoprefixer";
 
 /**
  * Processes the given CSS with some select plugins, after which it resolves
- * with the processed CSS and the container query stats.
+ * with the extracted metadata.
  *
  * @param {string} css
  * @param {{}} [options] container query postcss plugin options
- * @return {Promise<{
- *   css: string,
- *   stats: Object,
- * }>}
+ * @return {Promise<{}>}
  */
 const processCSS = (css, options = {}) =>
   new Promise(resolve => {
-    options.getJSON = (filepath, stats) => resolve(stats);
+    options.getJSON = (filepath, meta) => resolve(meta);
     postcss([
       nested({ bubble: ["container"] }),
       mediaMinMax(),
