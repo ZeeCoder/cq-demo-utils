@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.0.23]
+
+### Fixed
+
+* `initialiseAllContainers` bugfix
+
+### Added
+
+* `initialiseAllContainersFromCSS` method
+
 ## [0.0.22]
 
 ### Fixed

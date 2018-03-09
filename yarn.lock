@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@zeecoder/container-query-meta-builder@^2.6.0-alpha.b6f6150e":
+"@zeecoder/container-query-meta-builder@2.6.0-alpha.b6f6150e", "@zeecoder/container-query-meta-builder@^2.6.0-alpha.b6f6150e":
   version "2.6.0-alpha.b6f6150e"
   resolved "https://registry.yarnpkg.com/@zeecoder/container-query-meta-builder/-/container-query-meta-builder-2.6.0-alpha.b6f6150e.tgz#157b21aa96e194ba04994c89bc2aeec289c68c1e"
   dependencies:
