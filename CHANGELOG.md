@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.0.22]
+
+### Fixed
+
+* Updated to v2.6.0-alpha.b6f6150e
+
 ## [0.0.21]
 
 ### Added
