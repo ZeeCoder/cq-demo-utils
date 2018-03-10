@@ -10,6 +10,7 @@ export default {
     "@zeecoder/container-query",
     "@zeecoder/postcss-container-query",
     "@zeecoder/react-container-query",
+    "@zeecoder/container-query-meta-builder",
     "postcss",
     "postcss-nested",
     "postcss-media-minmax",

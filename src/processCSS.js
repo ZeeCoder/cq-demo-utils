@@ -1,4 +1,6 @@
-import containerQuery from "@zeecoder/postcss-container-query";
+import containerQuery, {
+  getMetadataFromMessages
+} from "@zeecoder/postcss-container-query";
 import postcss from "postcss";
 import nested from "postcss-nested";
 import mediaMinMax from "postcss-media-minmax";
@@ -14,7 +16,7 @@ import autoprefixer from "autoprefixer";
  */
 const processCSS = (css, options = {}) =>
   new Promise(resolve => {
-    options.getJSON = (filepath, meta) => resolve(meta);
+    options.getJSON = () => {};
     postcss([
       nested({ bubble: ["container"] }),
       mediaMinMax(),
@@ -31,7 +33,12 @@ const processCSS = (css, options = {}) =>
       containerQuery(options)
     ])
       .process(css, { from: "src/app.css", to: "dest/app.css" })
-      .then(result => appendCSS(result));
+      .then(({ messages, css }) => {
+        const meta = getMetadataFromMessages(messages);
+
+        resolve(meta);
+        appendCSS(css);
+      });
   });
 
 /**

@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.0.24]
+
+### Fixed
+
+* Updated to 2.7.0-alpha.0c3d1cbe
+* Using postcss plugin messages in `processCSS`
+
 ## [0.0.23]
 
 ### Fixed
