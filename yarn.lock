@@ -2,18 +2,18 @@
 # yarn lockfile v1
 
 
-"@zeecoder/container-query-meta-builder@2.7.0-alpha.0c3d1cbe", "@zeecoder/container-query-meta-builder@^2.7.0-alpha.0c3d1cbe":
-  version "2.7.0-alpha.0c3d1cbe"
-  resolved "https://registry.yarnpkg.com/@zeecoder/container-query-meta-builder/-/container-query-meta-builder-2.7.0-alpha.0c3d1cbe.tgz#4f356f6c5e4181ec2f54d264dbbc48dc27fbd7c5"
+"@zeecoder/container-query-meta-builder@2.6.0", "@zeecoder/container-query-meta-builder@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@zeecoder/container-query-meta-builder/-/container-query-meta-builder-2.6.0.tgz#bfdf699785e122375b8b71d4c9b1788f0680c4f5"
   dependencies:
     lodash "^4.17.4"
     object-assign "^4.1.1"
 
-"@zeecoder/container-query@2.7.0-alpha.0c3d1cbe", "@zeecoder/container-query@^2.7.0-alpha.0c3d1cbe":
-  version "2.7.0-alpha.0c3d1cbe"
-  resolved "https://registry.yarnpkg.com/@zeecoder/container-query/-/container-query-2.7.0-alpha.0c3d1cbe.tgz#1567110b82e4cc7afd7c07c0b8b56794e6d8cd2c"
+"@zeecoder/container-query@2.6.0", "@zeecoder/container-query@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@zeecoder/container-query/-/container-query-2.6.0.tgz#39e2596e21203ac4f1189dfa74839bfa2a407129"
   dependencies:
-    "@zeecoder/container-query-meta-builder" "^2.7.0-alpha.0c3d1cbe"
+    "@zeecoder/container-query-meta-builder" "^2.6.0"
     es6-weak-map "^2.0.2"
     lodash "^4.17.4"
     mutation-observer "^1.0.2"
@@ -21,19 +21,19 @@
     raf "^3.3.2"
     resize-observer-polyfill "^1.4.2"
 
-"@zeecoder/postcss-container-query@2.7.0-alpha.0c3d1cbe":
-  version "2.7.0-alpha.0c3d1cbe"
-  resolved "https://registry.yarnpkg.com/@zeecoder/postcss-container-query/-/postcss-container-query-2.7.0-alpha.0c3d1cbe.tgz#89cc65166d595e3860f71666b5214c13422125f8"
+"@zeecoder/postcss-container-query@2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@zeecoder/postcss-container-query/-/postcss-container-query-2.7.1.tgz#ab427a46cec4d1a394a33dd90c3cbe393661cb0c"
   dependencies:
-    "@zeecoder/container-query-meta-builder" "^2.7.0-alpha.0c3d1cbe"
+    "@zeecoder/container-query-meta-builder" "^2.6.0"
     lodash "^4.17.4"
     postcss "^6.0.1"
 
-"@zeecoder/react-container-query@2.7.0-alpha.0c3d1cbe":
-  version "2.7.0-alpha.0c3d1cbe"
-  resolved "https://registry.yarnpkg.com/@zeecoder/react-container-query/-/react-container-query-2.7.0-alpha.0c3d1cbe.tgz#bb4c192c281a2993d1fb47f02e4c38f559597826"
+"@zeecoder/react-container-query@2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@zeecoder/react-container-query/-/react-container-query-2.6.0.tgz#5c6d0c10d4f8df35c476e840db7bf08bd84ea5d3"
   dependencies:
-    "@zeecoder/container-query" "^2.7.0-alpha.0c3d1cbe"
+    "@zeecoder/container-query" "^2.6.0"
     es6-weak-map "^2.0.2"
     prop-types "^15.6.0"
     resize-observer-polyfill "^1.5.0"

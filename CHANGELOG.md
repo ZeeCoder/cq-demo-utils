@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.0.25]
+
+### Fixed
+
+* Package upgrades
+
 ## [0.0.24]
 
 ### Fixed

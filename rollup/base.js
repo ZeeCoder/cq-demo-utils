@@ -9,6 +9,7 @@ export default {
     "prop-types",
     "@zeecoder/container-query",
     "@zeecoder/postcss-container-query",
+    "@zeecoder/postcss-container-query/getMetadataFromMessages",
     "@zeecoder/react-container-query",
     "@zeecoder/container-query-meta-builder",
     "postcss",

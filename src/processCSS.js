@@ -1,6 +1,5 @@
-import containerQuery, {
-  getMetadataFromMessages
-} from "@zeecoder/postcss-container-query";
+import containerQuery from "@zeecoder/postcss-container-query";
+import getMetadataFromMessages from "@zeecoder/postcss-container-query/getMetadataFromMessages";
 import postcss from "postcss";
 import nested from "postcss-nested";
 import mediaMinMax from "postcss-media-minmax";
